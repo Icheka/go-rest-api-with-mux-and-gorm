@@ -13,7 +13,7 @@ import (
 var DB *gorm.DB
 var err error
 
-const DNS = "me:password@tcp(127.0.0.1:3306)/tester"
+const DNS = "me:password@tcp(127.0.0.1:3306)/tester?charset=utf8&parseTime=True"
 
 type User struct {
 	gorm.Model
